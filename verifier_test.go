@@ -275,7 +275,6 @@ func TestCheckEmail_DisabledMXCheck(t *testing.T) {
 		Free:         false,
 		SMTP:         nil,
 	}
-	verifier.EnableSMTPCheck()
 	assert.NoError(t, err)
 	assert.Equal(t, &expected, ret)
 }
